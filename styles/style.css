@@ -1,1 +1,74 @@
 /* место для вашего кода */
+
+.flex__center {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 293px;
+  align-content: center;
+}
+.logo {
+  width: 129px;
+}
+.navigation {
+  display: flex;
+  font-family: Raleway;
+  list-style: circle;
+  gap: 26px;
+
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway;
+  font-size: 18px;
+  max-width: 240px;
+}
+
+.adress a {
+  text-underline-offset: 4px;
+}
+
+.cover {
+
+  height: 757px;
+  background-image: url("../images/cover.jpg");
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 60%);
+  height: 100%;
+  width: 100%;
+}
+
+.cover h1 {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  line-height: 1;
+  color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.cover h1 span {
+  display:block;
+}
+
+.cover h1 span:nth-child(1) {
+  text-align:left; 
+}
+.cover h1 span:nth-child(2) {
+  text-align:center; 
+}
+.cover h1 span:nth-child(3) {
+  text-align:right; 
+}
