@@ -166,6 +166,7 @@ li{
   flex-direction: row;
   gap: 25px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 
@@ -190,7 +191,7 @@ li{
   line-height: 118%;
   text-decoration: underline;
   font-size: 22px;
-  text-underline-offset: 10%;
+  text-underline-offset: 15%;
   text-decoration-skip-ink: none;
 
 }
@@ -225,7 +226,7 @@ li{
   display: grid;
   grid-template-columns: 334px 1fr;
   height: 595px;
-  margin-top: 120px;
+  margin-top: 154px;
   padding: 0 24px;
 
 }
@@ -274,6 +275,10 @@ li{
   grid-template-columns: repeat(3, 1fr );
   margin-top: 180px;
   padding: 0 50px 0 51px;
+}
+
+.footer a {
+  text-underline-offset: 5px;
 }
 
 .footer address{
