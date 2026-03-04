@@ -1,5 +1,9 @@
 /* место для вашего кода */
 
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   text-underline-offset: 2px;
 }
@@ -282,6 +286,7 @@ li {
   display: flex;
   justify-content: flex-end;
   gap: 48px;
+  list-style: none;
 }
 
 .footer__links img {
