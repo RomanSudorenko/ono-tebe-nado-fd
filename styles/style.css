@@ -7,19 +7,28 @@
 
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 293px;
-  align-content: center;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 0px 96px 0px;
 }
-.logo {
-  width: 129px;
-}
+
 .navigation {
   display: flex;
   font-family: Raleway;
+  font-size: 18px;
   list-style: circle;
-  gap: 26px;
+  gap: 33px;
+  padding-left: 50px;
+  text-underline-offset: 4px;
 
+}
+.active, .active a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  width: 135px;
 }
 
 .adress {
@@ -27,7 +36,10 @@
   flex-direction: column;
   font-family: Raleway;
   font-size: 18px;
-  max-width: 240px;
+  font-style: normal;
+  line-height: 24px;
+  padding-left: 193px;
+  padding-right: 50px;
 }
 
 .adress a {
@@ -35,12 +47,17 @@
 }
 
 .cover {
-
+  position: relative;
   height: 757px;
   background-image: url("../images/cover.jpg");
+  background-size: cover;
+  z-index: -2;
 }
 
 .overlay {
+  z-index: -1;
+  position: absolute;
+  inset: 0;
   background-color: rgb(0 0 0 / 60%);
   height: 100%;
   width: 100%;
@@ -51,11 +68,13 @@
   font-weight: bold;
   font-size: 100px;
   text-transform: uppercase;
-  letter-spacing: .25em;
-  line-height: 1;
+  letter-spacing: 30px;
+  line-height: 135%;
   color: #fff;
+  padding-top: 155px;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 19px;
+  
 }
 
 
@@ -72,3 +91,161 @@
 .cover h1 span:nth-child(3) {
   text-align:right; 
 }
+
+.description {
+  position: absolute;
+  bottom: 50px;
+  padding-left: 50px;
+  color: #fff;
+  font-family: 'Raleway';
+  font-size: 22px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.description p {
+  display: inline-block;
+  word-spacing: 85%;
+}
+
+.description button {
+  margin-left: 107px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-spacing: 2px;
+  border: 1px solid #fff;
+  height: 51px;
+  width: 256px;
+  color: #fff;
+}
+
+.lots {
+  margin-top: 126px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lots__title {
+  
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  align-self: flex-start;
+  margin-left: 65px;
+  margin-bottom: 28px;
+}
+
+.lots ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+}
+
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  background-size: cover;
+  height: 596px;
+  color: #fff;
+  padding: 48px 40px;
+  z-index: -2;
+}
+
+.card_title {
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 118%;
+  text-decoration: underline;
+  font-size: 22px;
+  text-underline-offset: 10%;
+  text-decoration-skip-ink: none;
+
+}
+
+.card p {
+  font-family: 'Raleway';
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lot-1 {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.lot-2 {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.lot-3 {
+  background-image: url("../images/card-lot-03.jpg");
+}
+
+.show__more {
+  align-self: flex-start;
+  font-family: 'Raleway';
+  font-size: 20px;
+  padding: 30px 0 0 63px;
+  
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  height: 595px;
+  margin-top: 120px;
+  padding: 0 24px;
+
+}
+.about__logo {
+  height: 240px;
+  width: 240px;
+  background-color: #000;
+  border: #000;
+  border-style: solid;
+  border-radius: 50%;
+  margin: 35px 72px 0 47px;
+}
+.about__logo img {
+    height: 114px;
+
+}
+
+.about__text__block {
+    font-family: 'Raleway';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 24px;
+
+
+}
+
+.about__text__block h2{
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: baseline;
+  margin-bottom: 100px;
+
+}
+
+.about__text__block div{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+
