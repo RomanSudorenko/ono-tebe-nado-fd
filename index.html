@@ -14,8 +14,8 @@
       <nav class="flex_center">
         <ul class="navigation">
           <li class="active"><a href="#cover">главная</a></li>
-          <li><a href="#lots">посмотреть лоты</a></li>
-          <li><a href="#about">об аукционе</a></li>
+          <li class="inactive"><a href="#lots">посмотреть лоты</a></li>
+          <li class="inactive"><a href="#about">об аукционе</a></li>
         </ul>
       </nav>
       <a href="#"
@@ -24,7 +24,7 @@
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        наб. Принсенграхт 263- 265, Амстердам
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main>
@@ -37,7 +37,7 @@
         </h1>
         <div class="description">
           <p>Аукцион вещей, в которые никто не верил</p>
-          <button>Сделать ставку</button>
+          <button type="button">Сделать ставку</button>
         </div>
       </section>
       <section id="lots" class="lots">
@@ -45,7 +45,7 @@
         <ul class="lots__list">
           <li class="lots__list-item">
             <a href="#">
-              <article class="card lot-1">
+              <article class="card card_type_film">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
@@ -60,7 +60,7 @@
           </li>
           <li class="lots__list-item">
             <a href="#">
-              <article class="card lot-2">
+              <article class="card card_type_book">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
@@ -78,7 +78,7 @@
           </li>
           <li class="lots__list-item">
             <a href="#">
-              <article class="card lot-3">
+              <article class="card card_type_picture">
                 <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
@@ -89,7 +89,6 @@
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
                   что это — одна из революционных работ Кандинского?
                 </p>
-                <!-- Пришлось использовать &nbsp что пы перенести точно также как на макете -->
               </article></a
             >
           </li>
@@ -118,6 +117,7 @@
               лотов невозможно представить современную культуру. Когда в эти
               вещи не верил никто, продолжали верить их создатели. И сейчас эти
               лоты стали культовыми.
+              <!-- Пришлось использовать &nbsp что пы перенести точно также как на макете -->
             </p>
           </div>
         </div>
@@ -127,13 +127,15 @@
       <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a class="fine_tuning" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        наб. Принсенграхт 263-265, Амстердам
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
-      <ul class="footer__menu">
-        <li class="active"><a href="#cover">главная</a></li>
-        <li><a href="#lots">посмотреть лоты</a></li>
-        <li><a href="#about">об аукционе</a></li>
-      </ul>
+      <nav>
+        <ul class="footer__menu">
+          <li class="active"><a href="#cover">главная</a></li>
+          <li class="inactive"><a href="#lots">посмотреть лоты</a></li>
+          <li class="inactive"><a href="#about">об аукционе</a></li>
+        </ul>
+      </nav>
       <ul class="footer__links">
         <li>
           <a href="#"><img src="images/yt.svg" alt="Канал в YouTube" /></a>
