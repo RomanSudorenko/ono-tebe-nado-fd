@@ -24,14 +24,22 @@ html {
   font-size: 18px;
 
 }
-.active, .active a {
-  text-decoration: none;
+
+.nav__item {
+  list-style: circle;
+}
+
+.nav__item_no-bullit {
   list-style: none;
 }
 
-.inactive {
-  list-style: circle;
+.nav__link {
+  text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.nav__link_active {
+  text-decoration: none;
 }
 
 .logo {
@@ -56,6 +64,8 @@ html {
   position: relative;
   z-index: 0;
   background-image: url("../images/cover.jpg");
+  background-repeat:no-repeat;
+  background-position: top;
   background-size: cover;
 }
 
@@ -168,6 +178,8 @@ html {
   height: 100%;
   padding: 48px 40px;
   color: #fff;
+  background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
 }
 
@@ -272,10 +284,15 @@ html {
 .footer__menu {
   font-size: 18px;
   text-align: center;
+  list-style: none;
 }
 
-.footer__menu li {
-  list-style: none;
+.footer__menu-link {
+  text-decoration: underline;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__links {
